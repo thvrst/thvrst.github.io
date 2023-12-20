@@ -28,7 +28,7 @@ a:hover {
     position: fixed;
     font-size: 2vw;
     margin: 0;
-    top: 45%;
+    top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }

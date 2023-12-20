@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    max-width: 100%;
+    min-width: 100%;
+    margin: auto;
+    padding: 3%;
+    font-family:'Menlo', monospace;
+    color: lime;
+   
+    
+}
+
+a:link {
+  text-decoration: none;
+  color: purple;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: magenta;
+}
+
+.container {
+    width: 90%;
+    position: fixed;
+    font-size: 2vw;
+    margin: 0;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    .container {
+	font-size: 5vw
+    }
+}

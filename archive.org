@@ -4,8 +4,9 @@
 #+html_link_up: /about
 #+BEGIN_COMMENT
 So kann style bei bedarf angepasst werden
-#+HTML_HEAD_EXTRA: <style> body { background-color: black; color: white; font-family: Menlo; }</style>
 #+END_COMMENT
+#+HTML_HEAD_EXTRA: <style> body { background-color: black; color: lime; font-family: Menlo; }</style>
+
 * archive ~
 *** 2024
 - 02.02.2024 - Kunstakademie Rundgang - Solo - Kunstakademie Düsseldorf (Live Impro/ Noise)
@@ -31,6 +32,7 @@ So kann style bei bedarf angepasst werden
 - 05.12.2021 - Stromspiesser - Solo - Gitterraum, Essen (Noise)
 - 30.10.2021 - LIVE!REMIX!NOW! - Folkwang Elektrisch - NOW Festival Philharmonie, Essen (Live Impro)
 ** theatre
-- phädra killing me softly - Musik - Regie: Antonie Zschoch - Schauspielhaus Hamburg
-- baby, you can't light my fire - Musik/ Video - Regie: Antonie Zschoch - Hfmt Hamburg
-- Die Affäre Rue de Lourcine - Musik/ Video - Regie: Markus Heinzelmann - Theater Bielefeld
+- schluss.aus. - Musik - Regie: Antonie Zschoch - St. Pauli Theater HAmburg 2024
+- phädra killing me softly - Musik - Regie: Antonie Zschoch - Schauspielhaus Hamburg 2023
+- baby, you can't light my fire - Musik/ Video - Regie: Antonie Zschoch - Hfmt Hamburg 2023
+- Die Affäre Rue de Lourcine - Musik/ Video - Regie: Markus Heinzelmann - Theater Bielefeld 2022

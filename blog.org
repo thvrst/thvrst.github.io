@@ -9,4 +9,4 @@ So kann style bei bedarf angepasst werden
 #+END_COMMENT
 
 * 2024
-*** <2024-07-03 Wed>
+** <2024-07-03 Wed>

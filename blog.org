@@ -1,5 +1,6 @@
 #+TITLE: blog ~
 #+OPTIONS: author:nil
+#+LANGUAGE: de
 #+OPTIONS: num:0 timestamp:nil toc:2 html-postamble:nil
 #+html_link_home: /index
 #+html_link_up: /about

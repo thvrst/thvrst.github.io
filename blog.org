@@ -1,5 +1,6 @@
+#+TITLE: blog ~
 #+OPTIONS: author:nil
-#+OPTIONS: num:0 timestamp:nil toc:1 html-postamble:nil
+#+OPTIONS: num:0 timestamp:nil toc:2 html-postamble:nil
 #+html_link_home: /index
 #+html_link_up: /about
 #+BEGIN_COMMENT
@@ -7,6 +8,5 @@ So kann style bei bedarf angepasst werden
 #+HTML_HEAD_EXTRA: <style> body { background-color: black; color: lime; font-family: Menlo; }</style>
 #+END_COMMENT
 
-* blog ~
-** 2024
+* 2024
 *** <2024-07-03 Wed>

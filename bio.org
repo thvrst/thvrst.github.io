@@ -1,0 +1,9 @@
+#+Title: Biography/ Artist Statements
+* English
+** Short 
+** Medium 
+** Long
+* Deutsch
+** kurz
+** mittel
+** lang

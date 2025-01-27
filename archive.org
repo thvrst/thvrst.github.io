@@ -5,9 +5,11 @@
 #+BEGIN_COMMENT
 So kann style bei bedarf angepasst werden
 #+END_COMMENT
-#+HTML_HEAD_EXTRA: <style> body { background-color: black; color: lime; font-family: Menlo; }</style>
+#+HTML_HEAD_EXTRA: <style> body { background-color: black; color: lime; font-family: Menlo;} .timestamp { color: lime; } </style>
 
 * archive ~
+*** 2025
+- [2025-01-25 Sat] - Just in Time - 3 Pieces - Neue Aula Folkwang Udk, Essen (4ch, "Fixed" Media)
 *** 2024
 - 13.12.2024 - Strategie V - Tim Pauli, Theo Voerste - Essen (Slow Metal)
 - 31.10.2024 - Support for The Body & Dis Fig - Solo - Stapeltor, Duisburg (Noise)

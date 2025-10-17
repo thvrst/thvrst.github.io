@@ -1,33 +1,32 @@
 body {
-    background-color: #1E1E1E;
+    background-color: black;
     max-width: 100%;
     min-width: 100%;
     margin: auto;
     padding: 3%;
-    font-family:TimesNewRoman,Times New Roman,Times;
-    color: whitesmoke;
-    line-height: 1.5;
+    font-family:'Menlo', monospace;
+    color: lime;
    
     
 }
 
 a:link {
-  text-decoration: underline;
-  color: whitesmoke;
+  text-decoration: none;
+  color: purple;
 }
 
 a:visited {
-  color: darkgray;
+  color: purple;
 }
 
 a:hover {
-  color: darkgray;
+  color: magenta;
 }
 
 .container {
     width: 90%;
     position: fixed;
-    font-size: 1.2vw;
+    font-size: 2vw;
     margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);

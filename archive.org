@@ -5,10 +5,12 @@
 #+BEGIN_COMMENT
 So kann style bei bedarf angepasst werden
 #+END_COMMENT
-#+HTML_HEAD_EXTRA: <style> body { background-color: black; color: lime; font-family: Menlo;} .timestamp { color: lime; } </style>
+#+HTML_HEAD_EXTRA: <style> body { background-color: #1E1E1E; color: whitesmoke; font-family: times;} .timestamp { color: whitesmoke; } </style>
 
-* archive ~
+* archive [~]
 *** 2025
+- [2025-07-17/18/19/20] - 16 Channel Soundinstallation - Folkwang Rundgang, Essen
+- [2025-07-25 Fri] - PvN _ TV - Philipp von Neumann, Theo Voerste - Sommer am U, Dortmund (Computer Music)
 - [2025-07-12 Sat] - STRATEGIE V - Tim Pauli, Theo Voerste - Doppelhaus, Essen (Slow Metal)
 - [2025-07-10 Thu] - Fabian Deschler, Julius Steyer, Theo Voerste - Rundgang Kunsthochschule Main (Free Improv)
 - [2025-07-02 Wed] - Just in Time - 3 Pieces - Neue Aula Folkwang Udk, Essen (multichannel, "Fixed" Media)

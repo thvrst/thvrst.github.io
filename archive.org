@@ -8,8 +8,12 @@ So kann style bei bedarf angepasst werden
 #+HTML_HEAD_EXTRA: <style> body { background-color: #1E1E1E; color: whitesmoke; font-family: times;} .timestamp { color: whitesmoke; } </style>
 
 * archive [~]
+*** 2026
+- 2026-01-16 - Sound Practice Research Kollektiv - SANAA, Essen (Sound Performance)
+- 2026-01-10 - treff13 - Jan St. Werner + Theo Voerste - Neue Musik Zentrale, Essen (Modular Organ)
 *** 2025
-- 2025-12-08 - Folkwang Elemente - NOW Festival, Essen (Modular Pipe Organ)
+- 2025-11-08 - Folkwang Elemente - NOW Festival, Essen (Modular Pipe Organ)
+- 2025-11-01/02 - Sound Practice Research Kollektiv - Festival of Future Nows - Neue Nationalgalerie, Berlin (Sound Performance)
 - 2025-10-25 - wenn ich mich so umhöre möcht ich laufend (fast) wo anders sein - NOW! vor Ort, Essen (Soundwalk)
 - 2025-07-17/18/19/20 - 16 Channel Soundinstallation - Folkwang Rundgang, Essen
 - 2025-07-25 - PvN _ TV - Philipp von Neumann, Theo Voerste - Sommer am U, Dortmund (Computer Music)

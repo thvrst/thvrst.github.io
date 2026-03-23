@@ -7,10 +7,11 @@ So kann style bei bedarf angepasst werden
 #+END_COMMENT
 #+HTML_HEAD_EXTRA: <style> body { background-color: #1E1E1E; color: whitesmoke; font-family: times;} .timestamp { color: whitesmoke; } </style>
 
-* archive [~]
+* archive
 *** 2026
+- 2026-03-20 - Runde #1 /w Sem Ribeiro Albuquerque Wendt (Free Improv)
 - 2026-01-16 - Sound Practice Research Kollektiv - SANAA, Essen (Sound Performance)
-- 2026-01-10 - treff13 - Jan St. Werner + Theo Voerste - Neue Musik Zentrale, Essen (Modular Organ)
+- 2026-01-10 - treff13 - /w Jan St. Werner - Neue Musik Zentrale, Essen (Modular Organ)
 *** 2025
 - 2025-11-08 - Folkwang Elemente - NOW Festival, Essen (Modular Pipe Organ)
 - 2025-11-01/02 - Sound Practice Research Kollektiv - Festival of Future Nows - Neue Nationalgalerie, Berlin (Sound Performance)

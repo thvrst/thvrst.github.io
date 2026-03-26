@@ -6,32 +6,16 @@
 #+BEGIN_COMMENT
 So kann style bei bedarf angepasst werden
 #+END_COMMENT
-#+HTML_HEAD_EXTRA: <style> body { background-color: black; color: lime; font-family: Menlo; }</style>
+#+HTML_HEAD_EXTRA: <style> body { background-color: #1E1E1E; color: whitesmoke; font-family: times;} .timestamp { color: whitesmoke; } </style>
+Theo Voerste (* 1996) is a composer, artist, performer, improviser, curator, melancholic, hoarder and wannabe clown based in Essen.
+Synthetic sounds and structures, as well as language and the physical and spatial properties of sound, are central elements in Theo's work.
+Theo frequently recontextualizes and recombines existing material to create new connections and hyperlinks. Post-irony and humor play an important role in this process.
+Theo is convinced that music is a collective experience.
 
-* English
-** Short
-Theo Voerste (*1996)
-is a composer and artist in the field of time-based media.
-He has been studying electronic composition at the Folkwang University of the Arts since 2020.
-In his work, he is interested in extreme music and algorithmic structures.
-He often recontextualises (pop-)cultural set pieces, focusing in particular on the extreme forms of musical expression.
-** Medium 
-** Long
-* Deutsch
-** kurz
-Theo Voerste (*1996)
-ist Komponist und freischaffender Künstler im Bereich zeitbasierte Medien.
-Seit 2020 studiert er Elektronische Komposition an der Folkwang Universität der Künste.
-In seiner Arbeit interessiert er sich für extreme Musik und algorithmische Strukturen.
-Häufig rekontextualisiert er (pop-)kulturelle Versatzstücke und rückt dabei insbesondere die Extremformen musikalischer Expression in den Fokus.
-** mittel
-** lang
+The computer is the main tool for their work.
+-----
+Theo Voerste (* 1996) ist Komponist*, Künstler*, Performer*, Improviser*, Kurator*, Melancholiker*, Sammler* und möchtegern Clown aus Essen.
+Synthetische Klänge und Strukturen, sowie Sprache und die physikalischen und räumlichen Eigenschaften von Klang sind zentrale Elemente in Theos Arbeit. Häufig rekontextualisiert und rekombiniert Theo bereits existierendes Material, um neue Zusammenhänge und Hyperlinks zu erzeugen. Postironie und Humor spielen dabei eine wichtig Rolle.
+Theo ist davon überzeugt, dass Musik eine kollektive Erfahrung ist.
 
-* Theater
-Theo Voerste (*1996 in Berg. Gladbach) ist Komponist und freischaffender Künstler im Bereich zeitbasierte Medien. Seit 2020 studiert er Elektronische Komposition an der Folkwang Universität der Künste. In seiner Arbeit interessiert er sich für extreme Musik und algorithmische Strukturen. Die Auseinandersetzung mit Wahrnehmung und immersiven Klang-Raum-Zeit Erfahrungen sind Kernthemen seiner künstlerischen Arbeit. Häufig rekontextualisiert er (pop-)kulturelle Versatzstücke und rückt dabei insbesondere die Extremformen musikalischer Expression in den Fokus. Er entwickelt dafür gerne Netzwerke und Regelsysteme und erforscht die Scheingegensätze digital vs. analog, organisch vs. synthetisch, Chaos vs. Ordnung.
-Nach einem abgebrochenen Philosophie-Studium, hospitierte er zunächst am Schauspiel Frankfurt und wurde nach diversen Gast-Regieassistenzen am Schauspiel Frankfurt für zwei Jahre fester Regieassistent am Staatstheater Braunschweig, wo er auch eigene Regieprojekte umsetzen konnte. Seine Erfahrungen als Regieassistent prägten sein Interesse an interdisziplinärer und intermedialer Arbeit sowie an theatralen und performativen Konzepten.
-Im Rahmen der Pina-Bausch-Gastprofessur an der Folkwang UdK war er Schüler bei Marina Abramovic, die ihn allerdings wegen seiner Kritik an ihren unreflektierten und hierarchischen Unterrichtsmethoden aus ihrer Klasse schmiss.
-Regelmäßig spielt er Solokonzerte oder Konzerte in unterschiedlichsten Formationen zwischen Extrem-Metal, experimenteller elektronischer Musik, Punk und Jazz.
-Als Theatermusiker arbeitete er u.a. am Theater Bielefeld und am Theater Grand Guignol. Mit Antonie Zschoch arbeitete er bereits in den Produktionen „Baby, you can’t light my fire“, „Phädra killing me softly“, sowie "schluss.aus" zusammen.
-Theo Voerste lebt und arbeitet im Pott, liebt Hunde und fühlt sich im Wald am wohlsten.
-
+Der Computer ist Theos Hauptwerkzeug.

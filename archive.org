@@ -1,12 +1,11 @@
 #+OPTIONS: author:nil
 #+OPTIONS: num:0 timestamp:nil toc:nil html-postamble:nil
 #+html_link_home: /index
-#+html_link_up: /about
+#+html_link_up: /index
 #+BEGIN_COMMENT
 So kann style bei bedarf angepasst werden
 #+END_COMMENT
 #+HTML_HEAD_EXTRA: <style> body { background-color: #1E1E1E; color: whitesmoke; font-family: times;} .timestamp { color: whitesmoke; } </style>
-
 * archive
 *** 2026
 - 2026-03-20 - Runde #1 /w Sem Ribeiro Albuquerque Wendt (Free Improv)

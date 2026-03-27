@@ -1,304 +1,501 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
-<meta name="generator" content="Org Mode" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Theo Voerste's archive"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="theo voerste">
+  <link rel="icon" type="image/vnd.icon" href="./favicon.ico">
+<title>archive</title>
 <style>
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
+  :root {
+    --bg:     #1E1E1E;
+    --fg:     whitesmoke;
+    --muted:  darkgrey;
+    --col:    280px;
+    --pad:    48px;
+  }
+
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── Layout ── */
+  .layout {
+    display: grid;
+    grid-template-columns: var(--col) 1fr;
+    min-height: 100vh;
+  }
+
+  /* ── Left column ── */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: var(--pad);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--muted);
+  }
+
+  .sidebar h1 {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: .02em;
+    margin-bottom: auto;
+  }
+
+  nav {
+    margin-top: 48px;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav a {
+    display: block;
+    color: var(--fg);
+    text-decoration: underline;
+    padding: 5px 0;
+    transition: color .15s;
+  }
+
+  nav a:hover { color: var(--muted); }
+
+  /* Active nav link */
+  body:has(#next:target)           nav a[href="#next"],
+  body:has(#live:target)           nav a[href="#live"],
+  body:has(#release:target)     nav a[href="#release"],
+  body:has(#theatre:target)        nav a[href="#theatre"],
+  body:has(#installation:target)   nav a[href="#installation"] {
+    color: var(--muted);
+  }
+
+  .sidebar footer {
+    margin-top: auto;
+    padding-top: 48px;
+  }
+
+  .sidebar footer a {
+    color: var(--fg);
+    text-decoration: underline;
+    transition: color .15s;
+  }
+
+  .sidebar footer a:hover { color: var(--muted); }
+
+  /* ── Right column ── */
+  .content {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel {
+    position: absolute;
+    inset: 0;
+    padding: var(--pad);
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease;
+  }
+
+  .panel:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #start {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body:has(:target) #start {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* ── Entry list ── */
+  .entry-list {
+    list-style: none;
     width: 100%;
   }
-  .equation {
-    vertical-align: middle;
+
+  .entry-list li {
+    display: grid;
+    grid-template-columns: 110px 1fr 1fr;
+    gap: 0 32px;
+    padding: 9px 0;
+    border-bottom: 1px dashed #333;
+    font-size: 14px;
   }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
+
+  .entry-list li:first-child {
+    border-top: 1px dashed #333;
   }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
+
+  .entry-date  { color: var(--fg); }
+  .entry-name  { color: var(--fg); }
+  .entry-place { color: var(--fg); text-align: right; }
+
+  .entry-name a,
+  .entry-name a:visited {
+      color: var(--muted);
+      text-decoration: underline;
   }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .entry-name a:hover {
+      color: var(--muted);
+  }
+
+  .entry-place a,
+  .entry-place a:visited {
+      color: var(--muted);
+      text-decoration: underline;
+  }
+  .entry-place a:hover {
+      color: var(--muted);
+  }
+  /* ── Start placeholder ── */
+  #start p {
+    color: var(--muted);
+  }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: #333; }
+
+  /* ── Mobile ── */
+  @media (max-width: 600px) {
+    .layout { grid-template-columns: 1fr; }
+
+    .sidebar {
+      position: static;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid var(--muted);
+      padding: 32px 24px 24px;
+    }
+
+    nav { margin-top: 24px; }
+
+    .sidebar footer { padding-top: 24px; }
+
+    .content { min-height: 80vh; }
+
+    .panel { position: static; opacity: 1; pointer-events: auto; display: none; padding: 32px 24px; }
+    .panel:target { display: block; }
+    #start { display: block; }
+    body:has(:target) #start { display: none; }
+
+    .entry-list li { grid-template-columns: 90px 1fr; }
+    .entry-place { display: none; }
+  }
 </style>
-<style> body { background-color: #1E1E1E; color: whitesmoke; font-family: times;} .timestamp { color: whitesmoke; } </style>
 </head>
 <body>
-<div id="org-div-home-and-up">
- <a accesskey="h" href="/index"> UP </a>
- |
- <a accesskey="H" href="/index"> HOME </a>
-</div><div id="content" class="content">
-<div id="outline-container-org64138db" class="outline-2">
-<h2 id="org64138db">archive</h2>
-<div class="outline-text-2" id="text-org64138db">
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h1>archive 🗄️</h1>
+
+    <nav>
+      <ul>
+	<li><a href="#next">next</a></li>
+        <li><a href="#live">live</a></li>
+        <li><a href="#release">release</a></li>
+        <li><a href="#installation">installation</a></li>
+	<li><a href="#theatre">theatre</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <a href="https://theovoerste.de/index">Theo Voerste</a> 🐌
+    </footer>
+  </aside>
+
+  <main class="content">
+<!--
+    <div id="start" class="panel">
+      <p>select a category</p>
+    </div>
+    -->
+    <!-- next -->
+    <div id="next" class="panel">
+      <ul class="entry-list">
+	<li>
+          <span class="entry-date">May 2026</span>
+          <span class="entry-name">⚰️⚰️⚰️</span>
+          <span class="entry-place">St. Anna, Bochum</span>
+        </li>
+      </ul>
+    </div>
+    <!-- Live -->
+    <div id="live" class="panel">
+      <ul class="entry-list">
+        <li>
+          <span class="entry-date">2026-03-20</span>
+          <span class="entry-name">Runde #1 /w Sem Ribeiro Albuquerque Wendt [free improv]</span>
+          <span class="entry-place">Neue Musik Zentrale, Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">2026-01-16</span>
+          <span class="entry-name">/w Sound Practice Research Kollektiv [sound performance]</span>
+          <span class="entry-place">SANAA, Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">2026-01-10</span>
+          <span class="entry-name">treff13 /w Jan St. Werner [modular organ]</span>
+          <span class="entry-place">Neue Musik Zentrale, Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">2025-11-08</span>
+          <span class="entry-name">Folkwang Elemente — NOW Festival [modular pipe organ]</span>
+          <span class="entry-place">Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">Nov 2025</span>
+          <span class="entry-name">/w Sound Practice Research Kollektiv — Festival of Future Nows</span>
+          <span class="entry-place">Neue Nationalgalerie, Berlin</span>
+        </li>
+        <li>
+          <span class="entry-date">2025-07-25</span>
+          <span class="entry-name">PvN _ TV /w Philipp von Neumann [computer music]</span>
+          <span class="entry-place">Sommer am U, Dortmund</span>
+        </li>
+        <li>
+          <span class="entry-date">2025-07-12</span>
+          <span class="entry-name">STRATEGIE V /w Tim Pauli [slow metal]</span>
+          <span class="entry-place">Doppelhaus, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2025-07-10</span>
+          <span class="entry-name">/w Fabian, Deschler, Julius Steyer [free improv]</span>
+          <span class="entry-place">Rundgang Kunsthoschule Mainz</span>
+        </li>
+	 <li>
+          <span class="entry-date">2025-07-02</span>
+          <span class="entry-name">Just in Time — 3 Pieces [multichannel, "Fixed" Media]</span>
+          <span class="entry-place">Folkwang Udk, Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">2025-05-21</span>
+          <span class="entry-name">STRATEGIE V /w Tim Pauli [slow metal]</span>
+          <span class="entry-place">Soft Rotation, 674fm, Köln</span>
+        </li>
+        <li>
+          <span class="entry-date">2025-05-18</span>
+          <span class="entry-name">Stromspiesser /w Sound Practice Research Kollektiv [sound performance]</span>
+          <span class="entry-place">FFT, Düsseldorf</span>
+        </li>
+	<li>
+          <span class="entry-date">2025-04-26</span>
+          <span class="entry-name">STRATEGIE V — KOLORIT Festival /w Tim Pauli [slow metal]</span>
+          <span class="entry-place">FFT, Düsseldorf</span>
+        </li>
+	 <li>
+          <span class="entry-date">2025-01-25</span>
+          <span class="entry-name">Just in Time — 3 Pieces [multichannel, "Fixed" Media]</span>
+          <span class="entry-place">Folkwang Udk, Essen</span>
+         </li>
+	<li>
+          <span class="entry-date">2024-12-13</span>
+          <span class="entry-name">sidegigs - STRATEGIE V /w Tim Pauli [slow metal]</span>
+          <span class="entry-place">Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">2024-10-31</span>
+          <span class="entry-name">Support for The Body &amp; Dis Fig [computer music, noise]</span>
+          <span class="entry-place">Stapeltor, Duisburg</span>
+        </li>
+        <li>
+          <span class="entry-date">2024-10-26</span>
+          <span class="entry-name">NOW! Festival -  Deterministic Jitter Showcase [computer music, noise]</span>
+          <span class="entry-place">Neue Musik Zentrale, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2024-10-18</span>
+          <span class="entry-name">"verschiebungen #2" — piano mechanicus [Disklavier + 4ch Tape]</span>
+          <span class="entry-place">Alte Feuerwache, Köln</span>
+        </li>
+	<li>
+          <span class="entry-date">2024-07-17</span>
+          <span class="entry-name">/w Veronika Hargitai Ensemble [jazz]</span>
+          <span class="entry-place">Pina Bausch Theater, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">June 2024</span>
+          <span class="entry-name">Next Generation, "kein katalog" [fixed media computer music]</span>
+          <span class="entry-place">ZKM, Karlsruhe</span>
+        </li>
+	<li>
+          <span class="entry-date">2024-06-04</span>
+          <span class="entry-name">"ZIRKUS 42289" [360Grad Video + 1ch Tape]</span>
+          <span class="entry-place">Visiodrom, Wuppertal</span>
+        </li>
+	<li>
+	  <span class="entry-date">2024-02-02</span>
+          <span class="entry-name">[computer music, noise]</span>
+          <span class="entry-place">Kunstakademie, Düsseldorf</span>
+        </li>
+	<li>
+	  <span class="entry-date">2023-11-17</span>
+          <span class="entry-name">Rundlauf - "chimaira #1" [1ch video, multichannel audio]</span>
+          <span class="entry-place">Rabbit Hole, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2023-06-23</span>
+          <span class="entry-name">Sound of the multitude — Nik Novak Speaker Skulptur - solo [noise]</span>
+          <span class="entry-place">Open Air, Mülheim</span>
+        </li>
+	<li>
+          <span class="entry-date">2023-06-23</span>
+          <span class="entry-name">Sound of the multitude — Nik Novak Speaker Skulptur - STRATEGIE V /w Tim Pauli [slow metal]</span>
+          <span class="entry-place">Open Air, Mülheim</span>
+        </li>
+	<li>
+          <span class="entry-date">2023-05-21</span>
+          <span class="entry-name">1140 Minuten, /w Pauli, Kollewijn, Zimmermann, Weigand, Porst, Beseler [Performance]</span>
+          <span class="entry-place">Tresor West, Dortmund</span>
+        </li>
+        <li>
+          <span class="entry-date">2023-05-10</span>
+          <span class="entry-name">Lauktuves [computer music, noise]</span>
+          <span class="entry-place">Studium P, Vilnius</span>
+        </li>
+	<li>
+          <span class="entry-date">2023-05-05</span>
+          <span class="entry-name">Lauktuves [computer music, noise]</span>
+          <span class="entry-place">Neue Musik Zentrale, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2023-05-04</span>
+          <span class="entry-name">Folkwang Jazzpreis /w Felix Riedel Quartett [jazz]</span>
+          <span class="entry-place">Pina Bausch Theater, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2023-04-22</span>
+          <span class="entry-name">Wittener Tage für neue Kammermusik /w Tim Pauli, Simon Bahr [Elect. Impro]</span>
+          <span class="entry-place">Saalbau, Witten</span>
+        </li>
+	<li>
+          <span class="entry-date">2022-12-10</span>
+          <span class="entry-name">Christmas whith friends /w Tim Pauli, Simon Bahr [Elect. Impro]</span>
+          <span class="entry-place">Neue Musik Zentrale, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2022-12-10</span>
+          <span class="entry-name">S201 & friends [noise]</span>
+          <span class="entry-place">RueBühne, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2022-12-01</span>
+          <span class="entry-name">/w Pauli, Kollewijn, Zimmermann, Weigand, Porst, Beseler [Performance]</span>
+          <span class="entry-place">Neue Musik Zentrale, Essen</span>
+        </li>
+	<li>
+          <span class="entry-date">2022-07-15</span>
+          <span class="entry-name">"destruenten #2" [360Grad Video + 2ch Tape]</span>
+          <span class="entry-place">Visiodrom, Wuppertal</span>
+        </li>
+	 <li>
+          <span class="entry-date">June 2022</span>
+          <span class="entry-name">Next Generation - "verschiebungen #1" [disklavier, ambisonics audio]</span>
+          <span class="entry-place">ZKM, Karlsruhe</span>
+        </li>
+	<li>
+          <span class="entry-date">2022-05-14</span>
+          <span class="entry-name">Lucidity Music Schlafkonzert [drone]</span>
+          <span class="entry-place">KoFabrik, Bochum</span>
+        </li>
+        <li>
+          <span class="entry-date">2022-04-23</span>
+          <span class="entry-name">Lucidity Music Schlafkonzert [drone]</span>
+          <span class="entry-place">St. Gertrud, Köln</span>	  
+        </li>
+	<li>
+          <span class="entry-date">2021-12-05</span>
+          <span class="entry-name">Stromspiesser [noise]</span>
+          <span class="entry-place">Gitteraum, Essen</span>
+        </li>
+		<li>
+          <span class="entry-date">2021-10-30</span>
+          <span class="entry-name">LIVE!REMIX!NOW! — Folkwang Elektrisch</span>
+          <span class="entry-place">NOW Festival Philharmonie, Essen</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Release -->
+    <div id="release" class="panel">
+      <ul class="entry-list">
+        <li>
+          <span class="entry-date">2025-26</span>
+          <span class="entry-name"><a href="https://theovoerste.bandcamp.com/album/wenn-ich-mich-so-umh-re-m-cht-ich-laufend-fast-woanders-sein">"wenn ich mich so umhöre möcht ich laufend (fast) woanders sein"</a>  </span>
+          <span class="entry-place">field</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Installation -->
+    <div id="installation" class="panel">
+      <ul class="entry-list">
+	 <li>
+          <span class="entry-date">2025</span>
+          <span class="entry-name">wenn ich mich so umhöre möcht ich laufend (fast) woanders - /w Rosalia Warnke [Soundwalk]</span>
+          <span class="entry-place">Essen</span>
+        </li>
+        <li>
+          <span class="entry-date">2025</span>
+          <span class="entry-name">no no no no no no no no no no no no no no no no [16 Ch. Soundinstallation]</span>
+          <span class="entry-place">Folkwang Rundgang, Essen</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Theatre -->
+    <div id="theatre" class="panel">
+      <ul class="entry-list">
+        <li>
+          <span class="entry-date">2025</span>
+          <span class="entry-name">Prima Facie [music, video] - /w Antonie Zschoch, Sophie Lenglachner</span>
+          <span class="entry-place">Theater Osnabrück</span>
+        </li>
+        <li>
+          <span class="entry-date">2024</span>
+          <span class="entry-name">schluss.aus. [music, video] - /w Antonie Zschoch</span>
+          <span class="entry-place">St. Pauli Theater Hamburg</span>
+        </li>
+        <li>
+          <span class="entry-date">2023</span>
+          <span class="entry-name">phädra killing me softly [music] - /w Antonie Zschoch</span>
+          <span class="entry-place">Schauspielhaus Hamburg</span>
+        </li>
+        <li>
+          <span class="entry-date">2023</span>
+          <span class="entry-name">baby, you cant light my fire [music, video] - /w Antonie Zschoch</span>
+          <span class="entry-place">Hfmt Hamburg</span>
+        </li>
+        <li>
+          <span class="entry-date">2022</span>
+          <span class="entry-name">Die Affäre Rue de Lourcine [music]</span>
+          <span class="entry-place">Theater Bielefeld</span>
+        </li>
+      </ul>
+    </div>
+
+
+  </main>
 </div>
-<div id="outline-container-orga35ccbc" class="outline-4">
-<h4 id="orga35ccbc">2026</h4>
-<div class="outline-text-4" id="text-orga35ccbc">
-<ul class="org-ul">
-<li>2026-03-20 - Runde #1 /w Sem Ribeiro Albuquerque Wendt (Free Improv)</li>
-<li>2026-01-16 - Sound Practice Research Kollektiv - SANAA, Essen (Sound Performance)</li>
-<li>2026-01-10 - treff13 - /w Jan St. Werner - Neue Musik Zentrale, Essen (Modular Organ)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgd3a97c6" class="outline-4">
-<h4 id="orgd3a97c6">2025</h4>
-<div class="outline-text-4" id="text-orgd3a97c6">
-<ul class="org-ul">
-<li>2025-11-08 - Folkwang Elemente - NOW Festival, Essen (Modular Pipe Organ)</li>
-<li>2025-11-01/02 - Sound Practice Research Kollektiv - Festival of Future Nows - Neue Nationalgalerie, Berlin (Sound Performance)</li>
-<li>2025-10-25 - wenn ich mich so umhöre möcht ich laufend (fast) wo anders sein - NOW! vor Ort, Essen (Soundwalk)</li>
-<li>2025-07-17/18/19/20 - 16 Channel Soundinstallation - Folkwang Rundgang, Essen</li>
-<li>2025-07-25 - PvN _ TV - Philipp von Neumann, Theo Voerste - Sommer am U, Dortmund (Computer Music)</li>
-<li>2025-07-12 - STRATEGIE V - Tim Pauli, Theo Voerste - Doppelhaus, Essen (Slow Metal)</li>
-<li>2025-07-10 - Fabian Deschler, Julius Steyer, Theo Voerste - Rundgang Kunsthochschule Main (Free Improv)</li>
-<li>2025-07-02 - Just in Time - 3 Pieces - Neue Aula Folkwang Udk, Essen (multichannel, "Fixed" Media)</li>
-<li>2025-05-21 - STRATEGIE V - Tim Pauli, Theo Voerste - Soft Rotation, 674fm, Köln (Slow Metal)</li>
-<li>2025-05-18 - Sound Research Practice, Jan St. Werner - Stromspiesser, Essen (Sound Performance)</li>
-<li>2025-04-26 - STRATEGIE V - Tim Pauli, Theo Voerste - KOLORIT Festival, FFT Düsseldorf (Slow Metal)</li>
-<li>2025-01-25 - Just in Time - 3 Pieces - Neue Aula Folkwang Udk, Essen (4ch, "Fixed" Media)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgcf064d4" class="outline-4">
-<h4 id="orgcf064d4">2024</h4>
-<div class="outline-text-4" id="text-orgcf064d4">
-<ul class="org-ul">
-<li>13.12.2024 - Strategie V - Tim Pauli, Theo Voerste - Essen (Slow Metal)</li>
-<li>31.10.2024 - Support for The Body &amp; Dis Fig - Solo - Stapeltor, Duisburg (Noise)</li>
-<li>26.10.2024 - Now! Festival Deterministic Jitter Showcase - Solo - Neue Musik Zentrale, Essen (Noise)</li>
-<li>18.10.2024 - verschiebungen #2 - piano mechanicus - Alte Feuerwache, Köln (Disklavier + 4ch Tape)</li>
-<li>17.07.2024 - Veronika Hargitai Ensemble - Pina Bausch Theater Fokwang Udk, Essen-Werden (Jazz)</li>
-<li>05.06.2024 - Next Generation - ZKM Karlsruhe</li>
-<li>04.06.2024 - ZIRKUS 42289 - Visiodrom, Wuppertal (360Grad Video + 1ch Tape)</li>
-<li>02.02.2024 - Kunstakademie Rundgang - Solo - Kunstakademie Düsseldorf (Live Impro/ Noise)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org3a2c64a" class="outline-4">
-<h4 id="org3a2c64a">2023</h4>
-<div class="outline-text-4" id="text-org3a2c64a">
-<ul class="org-ul">
-<li>17.11.2023 - Rundlauf - chimaira #1 - Neue Musik Zentrale, Essen</li>
-<li>25.06.2023 - Folkwang Rundgang - Duo mit Philipp Neumann - Campus Nord Folkwang Udk Essen (Live Impro/ Noise)</li>
-<li>23.06.2023 - Sound of the multitude, Nik Novak Speaker Skulptur - Solo - Open Air, Mülheim an der Ruhr (Noise)</li>
-<li>23.06.2023 - Sound of the multitude, Nik Novak Speaker Skulptur - Strategie V - Open Air, Mülheim an der Ruhr (Drone Metal)</li>
-<li>21.05.2023 - 1140 Minuten - Pauli, Kollewijn, Zimmermann, Weigand, Porst, Beseler, Voerste - Tresor West Dortmund (Performance)</li>
-<li>10.05.2023 - Lauktuves - Solo - Studium P, Vilnius, Litauen (Noise)</li>
-<li>05.05.2023 - Lauktuves - Solo - Neue Musik Zentrale, Essen (Noise)</li>
-<li>04.05.2023 - Folkwang Jazzpreis - Felix Riedel Quartett - Pina Bausch Theater Fokwang Udk, Essen-Werden (Jazz)</li>
-<li>22.04.2023 - Wittener Tage für Neue Kammermusik - Trio - Voerste, Pauli, Bahr - Saalbau, Witten (Live Impro)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org94e6923" class="outline-4">
-<h4 id="org94e6923">2022</h4>
-<div class="outline-text-4" id="text-org94e6923">
-<ul class="org-ul">
-<li>18.12.2022 - GNMR Adventskalender - Christmas with Friends - Trio - Voerste, Pauli, Bahr - Neue Musik Zentrale, Essen (Live Impro)</li>
-<li>10.12.2022 - S201 &amp; friends 1 - Solo - RueBühne, Essen (Noise)</li>
-<li>01.12.2022 - GNMR Adventskalender - Beseler, Kollewijn, Porst, Voerste, Weigand, Zimmermann - Neue Musik Zentrale, Essen (Performance)</li>
-<li>15.07.2022 - destruenten #2 - Visiodrom, Wuppertal (360Grad Video + 2ch Tape)</li>
-<li>24.06.2022 - Next Generation - verschiebungen #1 - ZKM, Karlsruhe (midi-flügel + Ambisonics tape)</li>
-<li>14.05.2022 - Lucidity Music Schlafkonzert - Solo - KoFabrik, Bochum (Drone)</li>
-<li>23.04.2022 - Lucidity Music Schlafkonzert - Solo - St. Gertrud, Köln (Drone)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgb6b7197" class="outline-4">
-<h4 id="orgb6b7197">2021</h4>
-<div class="outline-text-4" id="text-orgb6b7197">
-<ul class="org-ul">
-<li>05.12.2021 - Stromspiesser - Solo - Gitterraum, Essen (Noise)</li>
-<li>30.10.2021 - LIVE!REMIX!NOW! - Folkwang Elektrisch - NOW Festival Philharmonie, Essen (Live Impro)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org7b76a3b" class="outline-3">
-<h3 id="org7b76a3b">theatre</h3>
-<div class="outline-text-3" id="text-org7b76a3b">
-<ul class="org-ul">
-<li>Prima Facie - Musik/ Video - Regie: Antonie Zschoch - Theater Osnabrück 2025</li>
-<li>schluss.aus. - Musik - Regie: Antonie Zschoch - St. Pauli Theater Hamburg 2024</li>
-<li>phädra killing me softly - Musik - Regie: Antonie Zschoch - Schauspielhaus Hamburg 2023</li>
-<li>baby, you can't light my fire - Musik/ Video - Regie: Antonie Zschoch - Hfmt Hamburg 2023</li>
-<li>Die Affäre Rue de Lourcine - Musik/ Video - Regie: Markus Heinzelmann - Theater Bielefeld 2022</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+
 </body>
 </html>
